@@ -14,7 +14,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
 
     if (userID === correctUserID && password === correctPassword) {
         // Redirect to index.html
-        window.location.href = 'file:///D:/Projects/Annual%20Report/login.html';
+        window.location.href = 'login.html';
     }
     else {
         // Display error message
