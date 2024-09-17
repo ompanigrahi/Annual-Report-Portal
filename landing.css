@@ -1,0 +1,286 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Default font */
+    line-height: 1.6; /* Line height for readability */
+    background-color: #cce3de; /* Light background color */
+}
+
+/* Header Styles */
+header {
+    background: #6b9080; /* Dark green background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding for the header */
+}
+
+.navbar {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.logo img {
+    height: 50px; /* Logo height */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+.nav-links a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.search {
+    margin-left: auto; /* Push search to the right */
+    
+}
+
+.search input {
+    padding: 5px; /* Padding for the input */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#Contact {
+    margin-left: 200px;
+}
+
+
+.profile {
+    display: flex; /* Flexbox for profile section */
+    margin: left 50px;
+    align-items: center; /* Center items vertically */
+}
+
+.dropdown {
+    position: relative; /* Position for dropdown */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown initially */
+    position: absolute; /* Absolute position */
+    background-color: white; /* Background color */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+    z-index: 1; /* Layering */
+}
+
+.dropbtn:hover + .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #6b9080;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    transform: scale(1.05);
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+
+/* Hero Section Styles */
+.hero {
+    background: #a4c3b2; /* Hero background color */
+    color: white; /* White text */
+    padding: 60px 20px; /* Padding for hero section */
+    text-align: center; /* Center text */
+}
+
+.cta-buttons {
+    margin-top: 20px; /* Margin above buttons */
+}
+
+
+.cta-primary, .cta-secondary {
+    display: inline-block; /* Inline block for buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    margin: 5px; /* Margin between buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+}
+
+.cta-primary {
+    background: #f44336; /* Red background */
+    color: white; /* White text */
+}
+.cta-primary:hover {
+    background-color: white;
+    color: #f44336 ;
+    transition: 1.7s;
+  }
+
+.cta-secondary {
+    background: #e7e7e7; /* Light gray background */
+    color: black; /* Black text */
+}
+.cta-secondary:hover{
+    background: rgb(50, 49, 49) ; /* Light gray background */
+    color: #e7e7e7; /* Black text */
+    transition: 0.7s;
+}
+
+
+
+
+
+
+/* Features Section Styles */
+.features {
+    padding: 40px 20px; /* Padding for features section */
+    text-align: center; /* Center text */
+}
+
+.features-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Gap between grid items */
+}
+
+.feature-card {
+    background: white; /* White background */
+    padding: 20px; /* Padding inside card */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow effect */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover{
+    transform: scale(1.1);
+    transition: 0.9s ease;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+
+/* Departments Section Styles */
+.departments {
+    padding: 40px 20px; /* Padding for departments section */
+    text-align: center; /* Center text */
+}
+
+.departments-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Gap between grid items */
+}
+
+.department-tile {
+    background: #486e5e; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Padding inside tile */
+    border-radius: 5px; /* Rounded corners */
+}
+.department-tile:hover{
+    background: #e7e7e7 ; /* Light gray background */
+    color: #486e5e; /* Black text */
+    transition: 0.7s;
+}
+
+.department-tile:hover{
+    transform: scale(1.07);
+    transition: 0.9s;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.department-tile:focus{
+    outline-color: #486e5e;
+}
+
+/* Footer Styles */
+footer {
+    background: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 20px; /* Padding for footer */
+    text-align: center; /* Center text */
+}
+
+.footer-links {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* No padding */
+}
+
+.footer-links a {
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Margin between links */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .search {
+        margin-top: 20px;
+         /* Space above search on small screens */
+    }
+
+    .cta-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+}
+
+.header-content{
+    transition: transform 0.4s ease;
+}
+
+.header-content:hover{
+    transform: scale(1.05);
+}
