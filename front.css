@@ -1,0 +1,127 @@
+
+/* Footer Styles */
+footer {
+    background: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 20px; /* Padding for footer */
+    text-align: center; /* Center text */
+}
+
+.footer-links {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* No padding */
+}
+
+.footer-links a {
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Margin between links */
+}
+
+
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Vibrant gradient background */
+    display: flex; /* Centering the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Login Container Styles */
+.login-container {
+    background: white; /* White background for the form */
+    padding: 40px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center; /* Center text */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width */
+}
+
+/* Heading Styles */
+h1 {
+    color: #4a90e2; /* Vibrant blue color */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Font size */
+}
+
+/* Form Styles */
+form {
+    display: flex; /* Flexbox layout for form elements */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Label Styles */
+label {
+    margin-bottom: 5px; /* Space below labels */
+    text-align: left; /* Align labels to the left */
+    font-weight: bold; /* Bold text */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"] {
+    padding: 15px; /* Padding for inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 2px solid #4a90e2; /* Vibrant border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #f39c12; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button Styles */
+button {
+    padding: 15px; /* Padding for button */
+    background-color: #4a90e2; /* Vibrant blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #f39c12; /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Error Message Styles */
+#error-message {
+    color: #e74c3c; /* Red color for error messages */
+    margin-top: 10px; /* Space above error message */
+    font-size: 14px; /* Font size */
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .login-container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size for heading */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size for button */
+    }
+}
